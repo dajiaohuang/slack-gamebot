@@ -33,7 +33,7 @@ git checkout -b my-feature-branch
 Ensure that you can build the project and run tests. You will need these dependencies in order to run tests.
 - [mongodb](https://docs.mongodb.com/manual/installation/)
 - [Firefox](https://www.mozilla.org/firefox/new/)
-- ruby 2.3.1 (use rbenv)
+- Ruby 3.4.6 (use rbenv; see [.ruby-version](.ruby-version) and [Gemfile](Gemfile))
 
 ```
 bundle install
