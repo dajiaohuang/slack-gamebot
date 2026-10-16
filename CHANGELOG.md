@@ -1,5 +1,6 @@
 ### Change Log
 
+* 2026/10/16: Restore game and team initialization from environment variables at startup and document the game aliases variable - [@dajiaohuang](https://github.com/dajiaohuang).
 * 2026/08/30: Add missing `game_id` index on `Team` to speed up per-game status queries used by `/api/status` - [@dblock](https://github.com/dblock), [@Copilot](https://github.com/apps/copilot-swe-agent).
 * Upgrade to Ruby 3.4.6 - [@dblock](https://github.com/dblock).
 * Fix: correct display current `season` with only `lost to` matches  - [@dblock](https://github.com/dblock).

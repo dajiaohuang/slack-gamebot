@@ -28,12 +28,12 @@ If your bot servces one team, create a new bot integration on Slack and set `SLA
 heroku config:add SLACK_API_TOKEN=...
 ```
 
-#### GAMEBOT_ALIASES
+#### SLACK_RUBY_BOT_ALIASES
 
-Optional names for this bot.
+Optional aliases for the game created or updated at startup when both `SLACK_CLIENT_ID` and `SLACK_CLIENT_SECRET` are set.
 
 ```
-heroku config:add GAMEBOT_ALIASES=":pong: pp"
+heroku config:add SLACK_RUBY_BOT_ALIASES=":pong: pp"
 ```
 
 Aliases can also be configured per-game. A default game will be created the first time the bot starts, you can update its aliases from a console.

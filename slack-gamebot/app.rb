@@ -5,6 +5,12 @@ module SlackGamebot
       Re-install the bot at https://www.playplay.io. Your data will be purged in 2 weeks.
     EOS
 
+    def prepare!
+      super
+      Game.find_or_create_from_env!
+      Team.find_or_create_from_env!
+    end
+
     def after_start!
       once_and_every 60 * 60 * 24 do
         check_trials!
