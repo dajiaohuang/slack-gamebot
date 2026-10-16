@@ -13,6 +13,7 @@ module SlackGamebot
           case arguments.last.downcase
           when 'infinity'
             max = nil
+            arguments.pop
           else
             begin
               Integer(arguments.last).tap do |value|
